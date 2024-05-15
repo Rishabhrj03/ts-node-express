@@ -1,0 +1,16 @@
+npm init -y
+
+npm i express dotenv
+
+npm i -D typescript @types/express @types/node
+
+npx tsc --init
+
+npx ts-node src/index.ts
+
+npm i -D nodemon ts-node
+
+"build": "npx tsc",
+"start": "node dist/index.js",
+"dev": "nodemon src/index.ts"
+
